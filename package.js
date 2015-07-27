@@ -17,7 +17,7 @@ Package.onUse(function(api) {
   api.use('iron:router@1.0.7', 'client', {weak: true});
   api.use('meteorhacks:flow-router@1.17.2', 'client', {weak: true});
   api.addFiles('lib/analytics-collection.js');
-  api.addFiles('lib/analytics-subscription.js');
+  api.addFiles('lib/analytics-subscription.js', 'client');
   api.addFiles('lib/browser-policy.js', 'server');
   api.addFiles('lib/server/publications.js', 'server');
   api.addFiles([
